@@ -6,8 +6,8 @@ class Activity < ActiveRecord::Base
   end
 
   def satisfaction
-    return 1  if positive > negative
-    return -1 if negative > positive
+    return 1  if positive > negative and positive > neutral
+    return -1 if negative > positive and negative > neutral
     0
   end
 
