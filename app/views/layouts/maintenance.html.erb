@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>iVideokê - Manutenção</title>
+    <link rel="shortcut icon" href="/images/favicon.gif" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Refresh" content="30;URL=/" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="description" content="iVideokê" />
+    <meta name="keywords" content="iVideokê, videokê" />
+    <meta name="copyright" content="iVideokê, 2006-2008" />
+    <meta name="author" content="www.icolor.com.br" />
+    <link href="/stylesheets/ivideoke.css" media="all" rel="Stylesheet" type="text/css" />
+    <link href="/stylesheets/ivideoke-print.css" media="print" rel="Stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>iVideokê</h1>
+    </div><!-- header -->
+
+    <div id="main">
+      <div id="flash"><p class="info">Desculpe-nos, mas estamos em manutenção.</p></div>
+      <h1>Manutenção</h1>
+      <p>O sistema está temporariamente fora do ar
+        <%= reason ? reason : 'para manutenção' %>
+      desde o dia <%= Time.now.strftime('%d/%m/%Y à(s) %H:%M (%Z)') %>.</p>
+      <p>Por favor, tente novamente assim que voltarmos
+      <%= deadline ? deadline : 'em breve' %>.</p>
+    </div><!-- main -->
+
+    <div id="footer">
+      <ul>
+        <li>&copy; 2006-2008 iVideokê</li>
+      </ul>
+    </div><!-- footer -->
+  </body>
+</html>
