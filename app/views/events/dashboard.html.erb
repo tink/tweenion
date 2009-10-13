@@ -17,7 +17,7 @@
     <td><%=h activity.neutral %></td>
     <td><%=h activity.positive %></td>
     <td><%=h activity.negative %></td>
-    <td><div class="<%= (activity.satisfaction == 1 ? "green" : (activity.satisfaction == -1 ? "red" : "yellow")) %>" style="width: <%= activity.popularity %>px;">&nbsp;</div></td>
+    <td><div class="<%= (activity.satisfaction == 1 ? "green" : (activity.satisfaction == -1 ? "red" : "yellow")) %>" style="width: <%= [ activity.popularity, 100 ].min %>px;">&nbsp;</div></td>
   </tr>
 <% end %>
 </table>
