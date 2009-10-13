@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  event: 
+  title: MyString
+  description: MyText
+  tag: MyString
+  neutral: 1
+  positive: 1
+  negative: 1
+
+two:
+  event: 
+  title: MyString
+  description: MyText
+  tag: MyString
+  neutral: 1
+  positive: 1
+  negative: 1

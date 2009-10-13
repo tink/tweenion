@@ -1,0 +1,38 @@
+<p>
+  <b>Event:</b>
+  <%=h @activity.event.title %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @activity.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @activity.description %>
+</p>
+
+<p>
+  <b>Tag:</b>
+  <%=h @activity.tag %>
+</p>
+
+<p>
+  <b>Neutral:</b>
+  <%=h @activity.neutral %>
+</p>
+
+<p>
+  <b>Positive:</b>
+  <%=h @activity.positive %>
+</p>
+
+<p>
+  <b>Negative:</b>
+  <%=h @activity.negative %>
+</p>
+
+
+<%= link_to 'Edit', edit_activity_path(@activity) %> |
+<%= link_to 'Back', activities_path %>

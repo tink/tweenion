@@ -1,0 +1,32 @@
+<h1>Listing activities</h1>
+
+<table>
+  <tr>
+    <th>Event</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Tag</th>
+    <th>Neutral</th>
+    <th>Positive</th>
+    <th>Negative</th>
+  </tr>
+
+<% @activities.each do |activity| %>
+  <tr>
+    <td><%=h activity.event.title %></td>
+    <td><%=h activity.title %></td>
+    <td><%=h activity.description %></td>
+    <td><%=h activity.tag %></td>
+    <td><%=h activity.neutral %></td>
+    <td><%=h activity.positive %></td>
+    <td><%=h activity.negative %></td>
+    <td><%= link_to 'Show', activity %></td>
+    <td><%= link_to 'Edit', edit_activity_path(activity) %></td>
+    <td><%= link_to 'Destroy', activity, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New activity', new_activity_path %>

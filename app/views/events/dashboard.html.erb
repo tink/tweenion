@@ -1,0 +1,23 @@
+<h1>Dashboard for activities at <%= @event.title %></h1>
+
+<table>
+  <tr>
+    <th>Activity</th>
+    <th>Tag</th>
+    <th>Neutral</th>
+    <th>Positive</th>
+    <th>Negative</th>
+    <th>Popularity/Satisfaction</th>
+  </tr>
+
+<% @event.activities.each do |activity| %>
+  <tr>
+    <td><%=h activity.title %></td>
+    <td>#<%=h activity.tag %></td>
+    <td><%=h activity.neutral %></td>
+    <td><%=h activity.positive %></td>
+    <td><%=h activity.negative %></td>
+    <td><%=h activity.popularity %>/<%=h activity.satisfaction %></td>
+  </tr>
+<% end %>
+</table>
